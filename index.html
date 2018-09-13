@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PWC - Site Inspector</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/t/bs/dt-1.10.12/datatables.min.css" />
+
+    <link rel="stylesheet" href="./css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/jquery-ui-1.11.4.min.css">
+    <link rel="stylesheet" href="./css/admin.css">
+    <link rel="stylesheet" href="./css/Site.css">
+
+</head>
+
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="header-logo-img">
+                    <img src="./images/county-seal-100x100.png" />
+                </div>
+                <span class="header-app-name">
+                    <div class="header-app-name1">
+                        PWC SIA
+                    </div>
+                    <div class="header-app-name2">
+                        COMMAND CENTER
+                    </div>
+                    <div class="header-app-name3">
+                        Welcome
+                    </div>
+                </span>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a class="btn btn-primary navbar-btn" href="/">Project Search</a></li>
+                    <li><a class="btn btn-primary navbar-btn" href="/Users">Manage Users</a></li>
+                    <li><a class="btn btn-primary navbar-btn" href="/ActivityDefinitions">Lookup Tables</a></li>
+                    <li><a class="btn btn-primary navbar-btn" href="/SummaryReport">Reports &amp; Time</a></li>
+                    <li><a class="btn btn-primary navbar-btn" href="/Projects/Create">Create Project</a></li>
+                </ul>
+                <!-- Login Partial -->
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="javascript:document.getElementById('logoutForm').submit()" class="header-text">Log off</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        <!-- Render Body Start -->
+
+        <div class="row">
+            <div class="col-md-2">
+                <div class="btn-group-vertical admin-menu-bar" role="group" aria-label="Pick Lists">
+
+                    <a class="btn btn-default active" href="#">Summary Report</a>
+                    <a class="btn btn-default  " href="#">Land Dist Actv Report</a>
+                    <a class="btn btn-default  " href="#">Inspector Time Report</a>
+                    <a class="btn btn-default  " href="#">Project Status Report</a>
+                </div>
+            </div>
+
+            <div class="col-md-10">
+                <h2>Prince William County Inspection Data Summary</h2>
+
+                <form action="/SummaryReport/Search" id="reportForm" method="get" novalidate="novalidate"><input name="__RequestVerificationToken"
+                        type="hidden" value="">
+                    <div class="validation-summary-valid text-danger" data-valmsg-summary="true">
+                        <ul>
+                            <li style="display:none"></li>
+                        </ul>
+                    </div>
+
+                </form>
+                <hr>
+                <div>
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a data-toggle="tab" href="#detailed">Detailed View</a></li>
+                        <li><a data-toggle="tab" href="#exec">Executive View</a></li>
+                    </ul>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div id="detailed" class="tab-pane fade in active">
+                            <iframe width="1200" height="700" src="https://app.powerbi.com/view?r=eyJrIjoiOTQ5MGU2MDItZmUzYy00NjZhLTlmOWItMThhYmYzYzQzOTVlIiwidCI6ImFkNmY2NTliLWM2YWMtNGJmYS04MWUyLThjOGZhN2M1ZmNhNCIsImMiOjF9"
+                                frameborder="0" allowFullScreen="true"></iframe>
+                        </div>
+                        <div id="exec" class="tab-pane fade">
+                            <iframe width="1200" height="700" src="https://app.powerbi.com/view?r=eyJrIjoiZjQxMmFiMDgtOWE3Ni00NjNhLWEwOTctOWIwN2E2NzgyZGU2IiwidCI6ImFkNmY2NTliLWM2YWMtNGJmYS04MWUyLThjOGZhN2M1ZmNhNCIsImMiOjF9"
+                                frameborder="0" allowFullScreen="true"></iframe>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+    <!-- Render Body End -->
+    <hr />
+    </div>
+    <div class="container">
+        <footer>
+            <p>Copyright &copy; Prince William County Government - All Rights Reserved</p>
+        </footer>
+    </div>
+
+    <!-- Load JS scripts -->
+    <script src="./js/jquery-2.2.1.min.js"></script>
+    <script src="./js/jquery-ui-1.11.4.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/t/bs/dt-1.10.12/datatables.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>

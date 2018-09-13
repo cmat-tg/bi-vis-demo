@@ -1,0 +1,263 @@
+﻿@media screen {
+    body {
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+
+    /* Set padding to keep content from hitting the edges */
+    .body-content {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    /* Override the default bootstrap behavior where horizontal description lists 
+       will truncate terms that are too long to fit in the left column 
+    */
+    .dl-horizontal dt {
+        white-space: normal;
+    }
+
+
+    /*  TG Overrides begin here  */
+    @media (min-width: 768px) {
+        .body-content {}
+    }
+
+    div.container.body-content {
+        margin-top: 50px;
+    }
+
+    footer {
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-top: 30px;
+        font-size: 12px;
+    }
+
+    /*  Layout Page Related */
+    .header-logo-img {
+        float: left;
+    }
+
+    .header-app-name1 {
+        font-size: 26px;
+        font-weight: 700;
+        color: #eee;
+        width: 320px;
+    }
+
+    .header-app-name2 {
+        font-size: 14px;
+        font-weight: 500;
+        color: #eee;
+    }
+
+    .header-app-name3 {
+        color: #337ab7;
+    }
+
+    .heading-text {
+        font-size: 22px;
+        font-weight: 500;
+        color: #000;
+    }
+
+    .btn-primary,
+    .header-text {
+        color: #fff !important;
+    }
+
+    .btn-primary:hover {
+        background-color: #286090 !important;
+        border-color: #204d74 !important;
+    }
+
+    .btn-primary {
+        margin-right: 5px !important;
+    }
+
+    .glyph-action {
+        font-size: 20px;
+        margin-right: 5px;
+    }
+
+
+    /*  Project Pages */
+    .project-search-bar {
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+
+    .shaded-group-row {
+        min-height: 18px;
+        background-color: #eee;
+        margin-bottom: 10px;
+        border-radius: 4px;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    /* general formatting */
+    .extra-spacing {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .admin-menu-bar {
+        margin-top: 30px;
+    }
+
+    .button-row {
+        padding-top: 10px;
+        margin-bottom: -20px;
+        margin-top: 15px;
+    }
+
+    .required:after,
+    .label-required label.control-label:after {
+        content: "*";
+        font-weight: bold;
+        margin-left: 2px;
+    }
+
+    .underline {
+        text-decoration: underline;
+    }
+
+    .bold-text {
+        font-weight: 700;
+    }
+
+    .file-thumbnail {
+        width: 50px;
+        height: 50px;
+    }
+
+    .past-date {
+        color: red;
+    }
+
+    .file-signature {
+        width: 156px;
+        height: 125px;
+    }
+
+    .notice-form-header {
+        margin-bottom: 30px;
+    }
+
+    .print-header-large {
+        font-size: 23px;
+    }
+
+    .print-header {
+        font-size: 12px;
+    }
+
+    .closing-section {
+        line-height: 2.25;
+    }
+
+    .print-image {
+        width: 500px;
+        height: 250px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .actv-header {
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .last-accordian-vsmp {
+        width: 100%;
+    }
+
+    .vsmp-section {
+        margin-bottom: 30px;
+    }
+
+    .remove-row-margin {
+        margin-left: -30px;
+    }
+
+    .tbsFloatOverride {
+        float: left !important;
+        padding-right: 15px !important;
+    }
+}
+
+/* End of Screen Styles */
+
+
+
+/*  
+
+    START OF PRINT CSS STYLES
+
+*/
+@media print {
+    .notice-form-header {
+        margin-bottom: 30px;
+    }
+
+    .underline {
+        text-decoration: underline;
+    }
+
+    .bold-text {
+        font-weight: 700;
+    }
+
+    .print-header-large {
+        font-size: 23px;
+    }
+
+    .print-header {
+        font-size: 12px;
+    }
+
+    .table-bordered>tbody>tr>td {
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+    }
+
+    .file-signature {
+        width: 156px;
+        height: 125px;
+    }
+
+    .print-form-header>div {
+        padding-left: 20px;
+    }
+
+    .closing-section {
+        line-height: 2.25;
+    }
+
+    .print-image {
+        width: 500px;
+        height: 250px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+
+    .actv-header {
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .vsmp-section {
+        margin-bottom: 30px;
+    }
+
+    .remove-row-margin {
+        margin-left: -30px;
+    }
+}
+
+.container {
+    margin-right: 5%;
+    margin-left: 5%;
+}
